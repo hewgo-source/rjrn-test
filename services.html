@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services | RoJo RhiNo LLC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="navbar">
+	<a class="brand" href="index.html" aria-label="RoJo RhiNo LLC Home">
+	  <img src="RoJo_RhiNo_Logo.png" alt="RoJo RhiNo LLC" class="brand-logo" />
+	</a>
+<!--
+        <a class="brand" href="index.html" aria-label="RoJo RhiNo LLC Home">
+          <span class="logo-dot" aria-hidden="true"></span>
+          <span>RoJo RhiNo LLC</span>
+        </a>
+-->
+        <nav class="navlinks">
+          <a href="index.html">Home</a>
+          <a href="services.html" class="active">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <a class="cta" href="contact.html">Let’s talk</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="hero-card">
+        <div class="kicker">
+          <span class="pill">Services</span>
+          <span>Built for the field</span>
+        </div>
+
+        <h1 style="margin-top:10px;">Oilfield services, engineered.</h1>
+        <p class="lead">
+          Here are the core lines of work we can support. If you’re not sure where your scope fits, send a note—we’ll map it.
+        </p>
+
+        <div class="grid-3" style="margin-top:16px;">
+          <div class="card">
+            <h3>Oilfield Asset Management</h3>
+            <p>Tracking, planning support, and documentation to keep assets and decisions aligned.</p>
+          </div>
+          <div class="card">
+            <h3>Testing Services</h3>
+            <p>Field-ready testing workflows with clear outputs and reporting you can actually use.</p>
+          </div>
+          <div class="card">
+            <h3>Engineering Services</h3>
+            <p>Practical engineering support to help teams move from questions to actions.</p>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="notice">
+          Tip: In your first iteration, keep scopes high-level on the public site, then add specifics once you’ve won a few projects and know what clients ask for most.
+        </div>
+
+        <div class="btn-row" style="margin-top:14px;">
+          <a class="btn primary" href="contact.html">Get availability</a>
+          <a class="btn" href="index.html">Back to home</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-row">
+        <div>© <span id="year"></span> RoJo RhiNo LLC. Kingwood, Texas.</div>
+        <div><a href="contact.html">Contact</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

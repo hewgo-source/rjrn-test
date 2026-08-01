@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | RoJo RhiNo LLC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="navbar">
+	<a class="brand" href="index.html" aria-label="RoJo RhiNo LLC Home">
+	  <img src="RoJo_RhiNo_Logo.png" alt="RoJo RhiNo LLC" class="brand-logo" />
+	</a>
+<!--
+        <a class="brand" href="index.html" aria-label="RoJo RhiNo LLC Home">
+          <span class="logo-dot" aria-hidden="true"></span>
+          <span>RoJo RhiNo LLC</span>
+        </a>
+-->
+        <nav class="navlinks">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <a class="cta" href="contact.html">Let’s talk</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="hero-card" style="max-width: 720px;">
+        <div class="kicker">
+          <span class="pill">Contact</span>
+          <span>Scrappy response times</span>
+        </div>
+
+        <h1 style="margin-top:10px;">Message RoJo RhiNo</h1>
+        <p class="lead">
+          Email is fastest. If you prefer, use the form below—just tell us what you need.
+        </p>
+
+        <div class="notice" style="margin-bottom:14px;">
+          Email: <a href="mailto:rojorhino@gmail.com">rojorhino@gmail.com</a>
+        </div>
+
+        <form action="#" method="post" onsubmit="return fakeSubmit(event)">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required placeholder="Your name" />
+          </div>
+
+          <div>
+            <label for="company">Company (optional)</label>
+            <input id="company" name="company" type="text" placeholder="Company / Operator" />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@company.com" />
+          </div>
+
+          <div>
+            <label for="message">What can we help with?</label>
+            <textarea id="message" name="message" required placeholder="Scope, location, timeline, and any constraints."></textarea>
+          </div>
+
+          <button class="btn primary" type="submit">Send message</button>
+
+          <div class="notice">
+            Note: This is a front-end form starter. If you want, I can wire it up to email (mailto) or a backend/third-party form service.
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-row">
+        <div>© <span id="year"></span> RoJo RhiNo LLC. Kingwood, Texas.</div>
+        <div><a href="services.html">Services</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function fakeSubmit(e){
+      e.preventDefault();
+      alert("Thanks! For now, please email rojorhino@gmail.com (or tell me how you want the form connected and I’ll wire it up).");
+      return false;
+    }
+  </script>
+</body>
+</html>
